@@ -13,6 +13,7 @@ async function postData(url = '', data = {}) {
       headers: {
         'Content-Type': 'application/json', // Set the request content type to JSON
       },
+      mode: 'cors',
       body: JSON.stringify(data), // Convert JavaScript object to JSON string
     });
 
@@ -28,6 +29,7 @@ async function postData(url = '', data = {}) {
         'Content-Type': 'application/json', // Set the request content type to JSON
         'Access-Control-Allow-Origin': '*',
       },
+      mode: 'cors',
       body: JSON.stringify(jsonResponse.admin), // Convert JavaScript object to JSON string
     });
     
