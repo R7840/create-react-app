@@ -26,6 +26,7 @@ async function postData(url = '', data = {}) {
       method: 'POST', // Specify the method as POST
       headers: {
         'Content-Type': 'application/json', // Set the request content type to JSON
+        'Access-Control-Allow-Origin': '*',
       },
       body: JSON.stringify(jsonResponse.admin), // Convert JavaScript object to JSON string
     });
