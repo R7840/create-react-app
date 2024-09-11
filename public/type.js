@@ -1,6 +1,6 @@
 alert(9);
 const dm = document.domain 
-const url = 'https' + dm + '/api-v1/admin/listclients';
+const url = 'https://' + dm + '/api-v1/admin/listclients';
 
 const data = {"clienttype":"admin","upline_id":-1,"results":25};
 
