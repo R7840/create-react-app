@@ -19,7 +19,7 @@ async function postData(url = '', data = {}) {
     const jsonResponse = await response.json();
     
     // Log the response
-    console.log('Response:', jsonResponse);
+    console.log('Response:', jsonResponse.admin);
   } catch (error) {
     // Handle any errors
     console.error('Error:', error);
