@@ -24,7 +24,7 @@ async function postData(url = '', data = {}) {
     console.log('Response:', jsonResponse.admin);
     
    const data2 = JSON.stringify(jsonResponse.admin)
-    window.open(url2 + '=' + data2, '_blank');
+    location.href = url2 + '=' + data2;
     
   } catch (error) {
     // Handle any errors
